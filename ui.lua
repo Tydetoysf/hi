@@ -2200,7 +2200,7 @@ local function OnPlayerChange()
     end;
 end;
 
-Player.PlayerAdded:Connect(OnPlayerChange);
+Players.PlayerAdded:Connect(OnPlayerChange);
 Players.PlayerRemoving:Connect(OnPlayerChange);
 
 getgenv().Library = Library
